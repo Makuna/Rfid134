@@ -4,9 +4,9 @@
 
 [![Donate](http://img.shields.io/paypal/donate.png?color=yellow)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=6AA97KE54UJR4)
 
-Library for the Rfid134 module  
+Library for the RFID WL-134 module  
 
-This library allows your Arduino project to read packets from the RFID134 module.  It supports both hardware serial and software serial.   
+This library allows your Arduino project to read packets from the RFID WL-134 module.  It supports both hardware serial and software serial.   
 
 ## Documentation
 [See Wiki](https://github.com/Makuna/Rfid134/wiki)
