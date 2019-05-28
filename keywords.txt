@@ -1,0 +1,28 @@
+#######################################
+# Syntax Coloring Map for Rfid134
+#######################################
+
+#######################################
+# Datatypes (KEYWORD1)
+#######################################
+
+Rfid134	KEYWORD1
+Rfid134Reading	KEYWORD1
+Rfid134_Error	KEYWORD1
+
+#######################################
+# Methods and Functions (KEYWORD2)
+#######################################
+
+begin	KEYWORD2
+loop	KEYWORD2
+
+#######################################
+# Constants (LITERAL1)
+#######################################
+
+Rfid134_Error_None	LITERAL1
+Rfid134_Error_PacketSize	LITERAL1
+Rfid134_Error_PacketEndCodeMissmatch	LITERAL1
+Rfid134_Error_PacketChecksum	LITERAL1
+Rfid134_Error_PacketChecksumInvert	LITERAL1
