@@ -133,16 +133,12 @@ private:
 
         if (static_cast<uint8_t>(~checksum) != static_cast<uint8_t>(packet[Rfid134_Packet_CheckSumInvert]))
         {
-            Serial.print("ERROR: packetChecksumInvert missmatch ");
-            Serial.print(static_cast<uint8_t>(~checksum));
-            Serial.print(" != ");
-            Serial.println(static_cast<uint8_t>(packet[Rfid134_Packet_CheckSumInvert]));
             return Rfid134_Error_PacketChecksumInvert;
         }
 
         Rfid134Reading reading;
 
-        // convert hex LSB ascii to number
+        // convert packet into the reading struct
         reading.id = HexLsbAsciiToUint64(&(packet[Rfid134_Packet_Id]), Rfid134_Packet_Country - Rfid134_Packet_Id);
         reading.country = HexLsbAsciiToUint64(&(packet[Rfid134_Packet_Country]), Rfid134_Packet_DataFlag - Rfid134_Packet_Country);
         reading.isData = packet[Rfid134_Packet_DataFlag] == '1';
