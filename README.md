@@ -2,7 +2,7 @@
 
 [![Join the chat at https://gitter.im/Makuna/Rfid134](https://badges.gitter.im/Makuna/Rfid134.svg)](https://gitter.im/Makuna/Rfid134?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
-[![Donate](http://img.shields.io/paypal/donate.png?color=yellow)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=6AA97KE54UJR4)
+[![Donate](https://img.shields.io/badge/paypal-donate-yellow.svg)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=6AA97KE54UJR4)
 
 Library for the RFID WL-134 module  
 
