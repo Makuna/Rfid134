@@ -66,6 +66,17 @@ void setup()
 
   Serial.println("initializing...");
   
+  // due to design differences in (Software)SerialConfig that make the serial.begin
+  // method inconsistent between implemenations, it is required that the sketch
+  // call serial.begin() that is specific to the platform
+  // 
+  // hardware
+  Serial1.begin(9600, SERIAL_8N2);
+  // software ESP
+  //secondarySerial.begin(9600, SWSERIAL_8N2);
+  // software AVR
+  //secondarySerial.begin(9600);
+  
   rfid.begin();
  
   Serial.println("starting...");
