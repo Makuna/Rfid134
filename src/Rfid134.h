@@ -56,7 +56,10 @@ public:
 
     void begin()
     {
-        _serial.begin(9600, SERIAL_8N2);
+        // due to design differences in (Software)SerialConfig that make the serial.begin
+        // method inconsistent between implemenations, it is required that the sketch
+        // call serial.begin() before call Rfid134.begin()
+        // _serial.begin(9600, SERIAL_8N2);
         _serial.setTimeout(1000);
     }
 
