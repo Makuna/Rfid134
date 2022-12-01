@@ -74,7 +74,7 @@ void setup()
   Serial1.begin(9600, SERIAL_8N2);
   // software ESP
   //secondarySerial.begin(9600, SWSERIAL_8N2);
-  // software AVR
+  // software AVR, doesn't support 8N2, thus may not work
   //secondarySerial.begin(9600);
   
   rfid.begin();
