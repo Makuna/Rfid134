@@ -116,7 +116,8 @@ private:
             return Rfid134_Error_PacketSize;
         }
 
-        if (packet[Rfid134_Packet_EndCode] != 0x03)
+        if (packet[Rfid134_Packet_EndCode] != 0x03 &&
+            packet[Rfid134_Packet_EndCode] != 0x07)
         {
             return Rfid134_Error_PacketEndCodeMissmatch;
         }
